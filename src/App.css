@@ -1,0 +1,55 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+@media (min-width: 4280px) {
+  .container {
+    min-width:4280px;
+  }
+}
+@media (min-width: 2080px) {
+  .container {
+    min-width:2080px;
+  }
+}
+@media (min-width: 1880px) {
+  .container {
+    min-width:1880px;
+  }
+}
+
+
+
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+     }
+   
+ 
+ 
+   100% {
+    opacity:1
+   }
+}
+
+.slide .react-swipeable-view-container {
+transition: transform 1000ms cubic-bezier(.190,1,.220,1),fadeIn 1000ms cubic-bezier(.190,1,.220,1),fadeIn 600ms linearo;
+
+    transition-delay:200ms;
+    animation: fadeIn 600ms ease-out ;
+    transition: transform 1000ms cubic-bezier(.190,1,.220,1),fadeIn 1000ms cubic-bezier(.190,1,.220,1),fadeIn 600ms linearo;
+    transition-delay:200ms;
+    width: 100%;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
